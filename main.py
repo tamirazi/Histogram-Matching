@@ -100,7 +100,7 @@ if __name__ == "__main__":
                 os.makedirs(directory + OUT)
             # Save color balanced image
             io.imsave(directory + OUT +
-                      "\\{}".format(filename), matched)
+                      "\\{}".format(filename), matched, quality=100)
             if debug_mode == True:
                 # Create debug folder if not exist
                 if not os.path.exists(directory + DEBUG):
